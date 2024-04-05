@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+       <style>
+    body {
+      background-color: #ADD8E5;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left-section {
+      float: left;
+      margin-top: 30px;
+      padding: 20px;
+    }
+
+     .right-section {
+      float: left;
+      margin-top: 30px;
+      padding: 20px;
+      width: 70%; /* Adjust the width as per your preference */
+      
+      background-color: #ADD8E5; /* Set the background color to blue */
+    }
+
+    .iframe-container {
+      width: 500px;
+      height: 500px; /* Adjust the height as per your preference */
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="logo">
+                <img src="images/logo1.png">
+                <strong class="logo-text">Women Health Care</strong>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Disorder</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+  <div class="container">
+    <div class="left-section">
+      <img src="images/body1.png" usemap="#image-map">
+      <map name="image-map">
+        <area target="right-iframe" href="mensuration.html" coords="396,295,18" shape="circle">
+        <area target="right-iframe" href="thyroid.html" coords="106,31,15" shape="circle">
+      </map>
+    </div>
+    <div class="right-section">
+      <div class="iframe-container">
+        <iframe id="right-iframe" name="right-iframe" src="intro.html"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle the click event on the hotspots
+    const hotspots = document.querySelectorAll('area');
+    const iframe = document.getElementById('right-iframe');
+
+    hotspots.forEach(hotspot => {
+      hotspot.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        const linkHref = hotspot.getAttribute('href');
+        iframe.src = linkHref; // Set the iframe src to the linked URL
+      });
+    });
+  </script>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY" >
+</iframe>
+</body>
+</html>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

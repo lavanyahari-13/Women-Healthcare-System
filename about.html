@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+      body{
+        background-color:#ADD8E5;
+        
+       }
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .container > section {
+            flex: 1;
+            text-align:justify;
+        }
+
+        .container > img {
+             position: relative; top:50px;
+            align-self:center;
+            margin-left: 30px;
+            height: 350px;
+            width: 500px;
+            margin-right: 50px;
+        }
+     
+
+        h1.zoom-effect {
+            animation: zoomInOut 3s linear infinite;
+        }
+
+        @keyframes zoomInOut {
+            0% { transform: scale(2); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+          
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <section class="logo">
+                <img src="images/logo1.png">
+               <strong class="logo-text">Women Health Care</strong>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="disorder.html">Disorder</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <section><br><br>
+            Welcome to our Women's Healthcare Center, where we prioritize the well-being and care of women of all ages. Our dedicated team of healthcare professionals is committed to providing comprehensive and personalized medical services tailored specifically to women's unique health needs.
+             <br>
+        <center><h1 class="zoom-effect">WHY CHOOSE US?</h1></center>
+          <ul>
+        <li>Comprehensive Women's Healthcare Services</li><br><br>
+        <li>Expert and Caring Healthcare Professionals</li><br><br>
+        <li>Wide Range of Specialized Women's Health Programs</li><br><br>
+        <li>Supportive and Comfortable Environment</li><br><br>
+        <li>Latest Advancements in Women's Health Treatments</li><br><br>
+     
+    </ul>
+        </section>
+
+        <img src="images/gal1.jpg" >
+    </div>
+  <footer>
+        <div class="container">
+            <div class="marquee">
+                <h3>&copy; 2023 Women Health Care. All rights reserved............"Health is the foundation of a fulfilling life"</h3>
+             
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

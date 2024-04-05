@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+     body{
+        background-color:#ADD8E5;
+        
+       }
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left-section {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .left-section form {
+      max-width: 500px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button[type="submit"] {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .right-section {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right-section img {
+      max-width: 500px;
+       padding: 20px;
+      
+     
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <section class="logo">
+        <img src="images/logo1.png">
+        <strong class="logo-text">Women Health Care</strong>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="disorder.html">Disorder</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="left-section">
+     
+      <form action="#" method="post">
+          <center><h1>Feedback Form</h1></center>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="right-section">
+      <img src="images/f1.gif">
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="marquee">
+        <h3>&copy; 2023 Women Health Care. All rights reserved............"Health is the foundation of a fulfilling life"<h3>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
